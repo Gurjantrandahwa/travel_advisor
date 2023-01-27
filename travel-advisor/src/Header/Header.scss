@@ -1,0 +1,15 @@
+.header {
+  height: 100vh;
+  background: radial-gradient(circle at top, #190601 , #502b45);
+  width: 100%;
+
+  .title-wrapper{
+    display: flex;
+    align-items: center;
+padding: 20px;
+    justify-content: space-between;
+    h5{
+      color: white;
+    }
+  }
+}
