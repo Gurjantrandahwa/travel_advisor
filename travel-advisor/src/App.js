@@ -1,5 +1,4 @@
 import './App.css';
-import Search from "./Search/Search";
 import PopularPlaces from "./PopularPlaces/PopularPlaces";
 import Navbar from "./Navbar/Navbar";
 import {Home} from "./Home/Home";

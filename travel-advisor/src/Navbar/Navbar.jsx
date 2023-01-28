@@ -3,6 +3,7 @@ import "./Navbar.scss";
 import {SiYourtraveldottv} from "react-icons/si";
 import {AiFillCloseCircle} from "react-icons/ai";
 import {TbGridDots} from "react-icons/tb";
+import {motion} from "framer-motion";
 
 export default function Navbar() {
     const [active, setActive] = useState("navbar");
@@ -12,8 +13,23 @@ export default function Navbar() {
     const removeNav = () => {
         setActive('navbar')
     }
-    return <section className={"navbar-Section"}>
-        <div className={"header"}>
+    return <section
+        className={"navbar-Section"}>
+        <motion.div
+            initial={{
+                x: -500,
+                opacity: 0,
+                scale: 0.5
+            }}
+            animate={{
+                x: 0,
+                opacity: 1,
+                scale: 1
+            }}
+            transition={{
+                duration: 1.5,
+            }}
+            className={"header"}>
             <div className={"logo-div"}>
                 <a href={"#"}>
                     <h1 className={"flex"}>
@@ -71,6 +87,6 @@ export default function Navbar() {
                 className={"toggleNavbar"}>
                 <TbGridDots className={"icon"}/>
             </div>
-        </div>
+        </motion.div>
     </section>
 }

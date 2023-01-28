@@ -1,3 +1,42 @@
-.home{
+.home {
+  height: 70vh;
+  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)),
+  url("https://i.redd.it/m6y3b2fkyie51.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
 
+  .home-text {
+    text-align: center;
+
+    h1 {
+      color: var(--whiteColor);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+    }
+
+    p {
+      color: var(--whiteColor);
+      opacity: .9;
+      font-size: 13px;
+      padding: 0.7rem 0;
+      margin: auto;
+      text-align: center;
+      font-weight: 300;
+      max-width: 70%;
+    }
+    button{
+      padding: .6rem 1.5rem;
+    }
+  }
+
+  .home-card{
+
+  }
 }

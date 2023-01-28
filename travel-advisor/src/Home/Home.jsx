@@ -3,13 +3,13 @@ import "./home.scss";
 
 export function Home() {
     return <section className={"home"}>
-        <div className={"container secContainer"}>
+        <div className={"container"}>
             <div className={"home-text"}>
-                <h1 className={"title"}>
+                <h1>
                     Plan Your Trip With Travel Advisor
                 </h1>
 
-                <p className={"sub-title"}>
+                <p>
                     Travel to your favourite city with respectful of the environment!
                 </p>
 
@@ -17,6 +17,15 @@ export function Home() {
                     <a href={"#"}>Explore Now</a>
                 </button>
 
+            </div>
+            <div className={"home-card grid"}>
+<form>
+    <div>
+        <label htmlFor={"location"}>Location</label>
+        <input />
+    </div>
+
+</form>
             </div>
         </div>
     </section>
