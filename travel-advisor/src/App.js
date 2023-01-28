@@ -1,13 +1,16 @@
 import './App.css';
-import Header from "./Header/Header";
 import Search from "./Search/Search";
 import PopularPlaces from "./PopularPlaces/PopularPlaces";
+import Navbar from "./Navbar/Navbar";
+import {Home} from "./Home/Home";
 
 function App() {
     return <div>
-        <Header/>
-        <Search/>
-        <PopularPlaces/>
+
+        <Navbar/>
+        <Home/>
+        {/*/!*<Search/>*!/*/}
+        {/*<PopularPlaces/>*/}
     </div>
 }
 

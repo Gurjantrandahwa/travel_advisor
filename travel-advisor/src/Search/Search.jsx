@@ -1,12 +1,12 @@
 import React from "react";
 import "./search.scss"
-import {Button, InputLabel} from "@mui/material";
+
 
 export default function Search() {
     return <div className={"search"}>
         <form>
             <div>
-                <InputLabel>Location</InputLabel>
+                <label>Location</label>
                 <input
                     type={"text"}
                     size={"small"}
@@ -14,7 +14,7 @@ export default function Search() {
                 />
             </div>
             <div>
-                <InputLabel>Distance</InputLabel>
+                <label>Distance</label>
                 <input
                     type={"text"}
                     size={"small"}
@@ -22,7 +22,7 @@ export default function Search() {
                 />
             </div>
             <div>
-                <InputLabel>Price Range</InputLabel>
+                <label>Price Range</label>
                 <input
                     type={"text"}
                     placeholder={"₹500-₹999"}
@@ -30,12 +30,12 @@ export default function Search() {
                 />
             </div>
 
-            <Button
+            <button
                 type={"submit"}
-                variant={"contained"}
+
             >
                 Search
-            </Button>
+            </button>
         </form>
 
     </div>

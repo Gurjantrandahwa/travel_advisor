@@ -5,6 +5,7 @@ export default function PopularPlaces() {
     const [places, setPlaces] = useState([])
 
         return <div className={"places"}>
+            popular
         </div>
 
 

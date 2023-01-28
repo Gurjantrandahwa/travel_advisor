@@ -1,0 +1,103 @@
+.navbar-Section {
+  //url(https://i.redd.it/m6y3b2fkyie51.jpg)
+
+  .header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+
+    .logo-div {
+      a {
+        color: var(--pimaryColor);
+        font-weight: 500;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar {
+        background: var(--greyBg);
+        position: absolute;
+        height: max-content;
+        padding: 1rem;
+        width: 100%;
+        top: 0;
+        left: -500%;
+        box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+        transition: .5s ease;
+        z-index: 1000;
+
+        .navLists {
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          margin: auto;
+
+          .navItem {
+            padding: 1rem 0;
+
+            .navLink {
+              color: var(--textColor);
+              font-size: 1.3rem;
+              font-weight: 600;
+
+              &:hover {
+                color: var(--pimaryColor);
+              }
+            }
+          }
+
+          .header-btn {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .btn {
+              a {
+                font-weight: 600;
+
+                &:hover {
+                  color: var(--whiteColor);
+                }
+              }
+            }
+
+            .login-btn {
+              background: none;
+              border: 1px solid var(--pimaryColor);
+
+              a {
+                color: var(--pimaryColor);
+              }
+            }
+          }
+        }
+
+        .closeNavbar {
+          position: absolute;
+          top: 1rem;
+          right: 1.5rem;
+          color: var(--pimaryColor);
+
+          &:hover .icon {
+            color: var(--HoverColor);
+          }
+        }
+      }
+
+      .activeNavbar {
+        left: 0;
+      }
+    }
+  }
+
+
+}
