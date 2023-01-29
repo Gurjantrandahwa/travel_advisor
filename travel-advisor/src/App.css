@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
 * {
     padding: 0;
     margin: 0;
@@ -18,8 +17,8 @@
     --textColor: hsl(240, 1%, 48%);
     --greyBg: hsl(0, 0%, 96%);
     --inputColor: hsl(330, 12%, 97%);
-    --greyText: rgb(190, 190, 190)
-
+    --greyText: rgb(190, 190, 190);
+    --box-shasow: 0 2px 8px 2px rgba(178,178,178,0.334);
 }
 
 a {

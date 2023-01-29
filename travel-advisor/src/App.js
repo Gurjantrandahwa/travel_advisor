@@ -1,15 +1,16 @@
 import './App.css';
-import PopularPlaces from "./PopularPlaces/PopularPlaces";
+import Places from "./Places/Places";
 import Navbar from "./Navbar/Navbar";
-import {Home} from "./Home/Home";
+import Home from "./Home/Home";
+import Offers from "./Offers/Offers";
 
 function App() {
     return <div>
 
         <Navbar/>
         <Home/>
-        {/*/!*<Search/>*!/*/}
-        {/*<PopularPlaces/>*/}
+        <Places/>
+        <Offers/>
     </div>
 }
 

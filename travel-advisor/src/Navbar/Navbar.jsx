@@ -7,12 +7,23 @@ import {motion} from "framer-motion";
 
 export default function Navbar() {
     const [active, setActive] = useState("navbar");
+    const [transparent, setTransparent] = useState('header')
     const showNav = () => {
         setActive('navbar activeNavbar')
     }
     const removeNav = () => {
         setActive('navbar')
     }
+    const addBg = () => {
+        if (window.scrollY >= 10) {
+            setTransparent('header activeHeader')
+        } else {
+            setTransparent("header")
+        }
+    }
+
+    window.addEventListener('scroll', addBg)
+
     return <section
         className={"navbar-Section"}>
         <motion.div
@@ -29,7 +40,7 @@ export default function Navbar() {
             transition={{
                 duration: 1.5,
             }}
-            className={"header"}>
+            className={transparent}>
             <div className={"logo-div"}>
                 <a href={"#"}>
                     <h1 className={"flex"}>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.scss";
 
-export function Home() {
+export default function Home() {
     return <section className={"home"}>
         <div className={"container"}>
             <div className={"home-text"}>
@@ -18,15 +18,26 @@ export function Home() {
                 </button>
 
             </div>
-            <div className={"home-card grid"}>
-<form>
-    <div>
-        <label htmlFor={"location"}>Location</label>
-        <input />
-    </div>
 
-</form>
-            </div>
+
+                    <form className={"home-card grid"}>
+                        <div>
+                            <label htmlFor={"location"}>Location</label>
+                            <input type={'text'} placeholder={"Dream Destination"}/>
+                        </div>
+                        <div>
+                            <label htmlFor={"distance"}>Distance</label>
+                            <input type={'text'} placeholder={"11/Meters"}/>
+                        </div>
+                        <div>
+                            <label htmlFor={"price"}>Price</label>
+                            <input type={'text'} placeholder={"₹500-₹1000"}/>
+                        </div>
+                        <button className={"btn"}>
+                            Search
+                        </button>
+                    </form>
+
         </div>
     </section>
 }

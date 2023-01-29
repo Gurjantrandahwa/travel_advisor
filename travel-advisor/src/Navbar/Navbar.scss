@@ -135,5 +135,8 @@
     }
   }
 
-
+  .activeHeader {
+    background: #0f0804;
+    box-shadow: var(--box-shasow);
+  }
 }
