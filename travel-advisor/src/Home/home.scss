@@ -49,13 +49,14 @@
     transform: translate(-50%);
     left: 50%;
     box-shadow: 0 2px 8px 4px rgba(179, 178, 178, 0.45);
-//display: flex;
-//flex-wrap: wrap;
+    //display: flex;
+    //flex-wrap: wrap;
     div {
       display: flex;
       flex-direction: column;
       width: 100%;
-      label{
+
+      label {
         display: block;
         color: var(--textColor);
         font-weight: 500;
@@ -63,7 +64,7 @@
         padding-bottom: .4rem;
       }
 
-      input{
+      input {
         width: 100%;
         background: var(--inputColor);
         border: none;
@@ -71,7 +72,8 @@
         font-size: 13px;
         font-weight: 500;
         outline: none;
-        &::placeholder{
+
+        &::placeholder {
           font-size: 13px;
           font-weight: 400;
           opacity: .5;
@@ -80,9 +82,9 @@
       }
 
     }
-    button{
+
+    button {
       font-weight: 600;
-      color: var(--whiteColor);
       width: 100%;
       padding: .6rem 1.5rem;
     }

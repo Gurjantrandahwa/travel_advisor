@@ -3,6 +3,7 @@ import Places from "./Places/Places";
 import Navbar from "./Navbar/Navbar";
 import Home from "./Home/Home";
 import Offers from "./Offers/Offers";
+import About from "./About/About";
 
 function App() {
     return <div>
@@ -11,6 +12,7 @@ function App() {
         <Home/>
         <Places/>
         <Offers/>
+        <About/>
     </div>
 }
 
