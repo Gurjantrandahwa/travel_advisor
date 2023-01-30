@@ -12,17 +12,17 @@ export default function About() {
                 {
                     [
                         {
-                            img: "https://i.pinimg.com/564x/fd/09/f7/fd09f7c5093408bcdd7510347301920f.jpg",
+                            img: "https://i.pinimg.com/564x/25/3d/e5/253de59d59105f24e3d2183d1c83f01e.jpg",
                             title: "1000+ Mountains",
                             description: " Although we don’t have cubs of our own we understand the uniqueness of travelling the world with kids."
                         },
                         {
-                            img: "https://i.pinimg.com/564x/42/6c/b1/426cb15ccbadcfdd1a860907bc9c3a18.jpg",
+                            img: "https://i.pinimg.com/564x/cb/c4/29/cbc4291d3fbf0ccc92e325923f528990.jpg",
                             title: "1000+ Hikings",
                             description: " Although we don’t have cubs of our own we understand the uniqueness of travelling the world with kids."
                         },
                         {
-                            img: "https://i.pinimg.com/564x/48/6d/e6/486de695c37a7411074cbc4168001315.jpg",
+                            img: "https://i.pinimg.com/564x/3f/68/a1/3f68a1d14bcb3f86629275103a730a6c.jpg",
                             title: "1000+ Customers",
                             description: " Although we don’t have cubs of our own we understand the uniqueness of travelling the world with kids."
                         },
@@ -45,11 +45,11 @@ export default function About() {
                     </p>
                 </div>
                 <div className={"cardVideo"}>
-                    <video src={"https://cdn.pixabay.com/vimeo/176277723/Beach%20-%203998.mp4?width=960&expiry=1675008881&hash=7c81f71b02b2183a68f2830f4e665a459b23bc0b"}
-                           autoPlay loop
-                    type={"video/mp4"}>
+                    <img
+                        src={"https://i.pinimg.com/originals/34/69/f5/3469f579034feb8cc90f3702abe06f13.gif"}
+                        alt={""}
+                    />
 
-                    </video>
                 </div>
             </div>
         </div>
