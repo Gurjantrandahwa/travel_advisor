@@ -30,6 +30,10 @@
         .navItem {
           a {
             color: var(--whiteColor);
+
+            &:hover {
+              color: var(--pimaryColor);
+            }
           }
         }
       }
@@ -38,6 +42,23 @@
     .header-btn {
       display: flex;
       gap: 1.5rem;
+
+      .login-btn {
+        background: none;
+        border: 1px solid var(--pimaryColor);
+
+        a {
+          color: var(--pimaryColor);
+        }
+      }
+
+      .login-btn:hover {
+        background-color: var(--pimaryColor);
+
+        a {
+          color: var(--whiteColor);
+        }
+      }
     }
 
     .closeNavbar {
@@ -48,11 +69,11 @@
       display: none;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 880px) {
       .navbar {
         background: var(--greyBg);
         position: absolute;
-        height: max-content;
+        height: 100vh;
         padding: 1.5rem 1rem;
         width: 100%;
         top: 0;
@@ -60,12 +81,14 @@
         box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
         transition: .5s ease;
         z-index: 1000;
+        justify-content: center;
+        display: flex;
 
         .navLists {
           flex-direction: column;
-          justify-content: center;
           width: 100%;
           margin: auto;
+          gap: 1rem;
 
           .navItem {
             padding: 0.5rem 0;

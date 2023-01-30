@@ -46,7 +46,7 @@ export default function About() {
                 </div>
                 <div className={"cardVideo"}>
                     <img
-                        src={"https://i.pinimg.com/originals/34/69/f5/3469f579034feb8cc90f3702abe06f13.gif"}
+                        src={"https://i.pinimg.com/originals/43/e0/20/43e0208b67c685c36a4ea1850614e2d5.gif"}
                         alt={""}
                     />
 

@@ -45,7 +45,7 @@ export default function Navbar() {
                 <a href={"#"}>
                     <h1 className={"flex"}>
                         <SiYourtraveldottv/>
-                        Travel
+                        Travel Advisor
                     </h1>
                 </a>
             </div>

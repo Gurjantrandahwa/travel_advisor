@@ -18,25 +18,23 @@ export default function Home() {
                 </button>
 
             </div>
-
-
-                    <form className={"home-card grid"}>
-                        <div>
-                            <label htmlFor={"location"}>Location</label>
-                            <input type={'text'} placeholder={"Dream Destination"}/>
-                        </div>
-                        <div>
-                            <label htmlFor={"distance"}>Distance</label>
-                            <input type={'text'} placeholder={"11/Meters"}/>
-                        </div>
-                        <div>
-                            <label htmlFor={"price"}>Price</label>
-                            <input type={'text'} placeholder={"₹500-₹1000"}/>
-                        </div>
-                        <button className={"btn"}>
-                            Search
-                        </button>
-                    </form>
+            <form className={"home-card grid"}>
+                <div>
+                    <label htmlFor={"location"}>Location</label>
+                    <input type={'text'} placeholder={"Dream Destination"}/>
+                </div>
+                <div>
+                    <label htmlFor={"distance"}>Distance</label>
+                    <input type={'text'} placeholder={"11/Meters"}/>
+                </div>
+                <div>
+                    <label htmlFor={"price"}>Price</label>
+                    <input type={'text'} placeholder={"₹500-₹1000"}/>
+                </div>
+                <button className={"btn"}>
+                    Search
+                </button>
+            </form>
 
         </div>
     </section>
