@@ -1,10 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./places.scss";
 import {BsArrowLeftShort, BsArrowRightShort} from "react-icons/bs";
 import {SiYourtraveldottv} from "react-icons/si";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 
 export default function Places() {
+    useEffect(() => {
+
+        Aos.init({duration: 2000})
+
+    }, [])
     const data = [
         {
             id: 0,
@@ -38,21 +45,21 @@ export default function Places() {
     return <section className={"places section container"}>
         <div className={"sec-container"}>
             <div className={"secHeader flex"}>
-                <div className={"text-div"}>
+                <div className={"text-div"} data-aos={"fade-right"}>
                     <h2>Popular Destination</h2>
                     <p>
                         From historical cities to natural spectaculars,
                         come to see the best of the world!
                     </p>
                 </div>
-                <div className={"icons-div flex"}>
+                <div className={"icons-div flex"} data-aos={"fade-left"}>
                     <BsArrowLeftShort className={"icon left-icon"}/>
                     <BsArrowRightShort className={"icon"}/>
                 </div>
             </div>
             <div className={"mainContent grid"}>
                 {data.map((value, index) => {
-                    return <div className={"singleDestination"} key={index}>
+                    return <div data-aos={"fade-up"} className={"singleDestination"} key={index}>
                         <div className={"destImage"}>
                             <img
                                 src={value.imgSrc}

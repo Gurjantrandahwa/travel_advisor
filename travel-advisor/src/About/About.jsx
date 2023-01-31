@@ -1,10 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./about.scss";
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
 export default function About() {
+    useEffect(() => {
+
+        Aos.init({duration: 2000})
+
+    }, [])
     return <section className={"about section"}>
         <div className={"secContainer"}>
-            <div className={"title"}>
+            <div className={"title"}  data-aos={"fade-up"} data-aos-duration={"2000"}>
                 Why Hikings ?
             </div>
             <div className={"mainContent container grid"}>
@@ -28,7 +34,9 @@ export default function About() {
                         },
 
                     ].map((value, index) => {
-                        return <div className={"singleItem"} key={index}>
+                        return <div
+                            data-aos={"fade-up"} data-aos-duration={"2500"}
+                            className={"singleItem"} key={index}>
                             <img src={value.img} alt={"Image Name"}/>
                             <h3>{value.title}</h3>
                             <p>{value.description}</p>
@@ -37,14 +45,15 @@ export default function About() {
                 }
             </div>
             <div className={"videoCard container"}>
-                <div className={"cardContent grid"}>
+                <div data-aos={"fade-left"} data-aos-duration={"2000"} className={"cardContent grid"}>
                     <h2>Wonderful House experience in there!</h2>
                     <p>
                         It’s important to spend those 18 summers with your children wisely.
                         Take them someplace that can create lasting memories.
                     </p>
+
                 </div>
-                <div className={"cardVideo"}>
+                <div data-aos={"fade-right"} data-aos-duration={"2000"} className={"cardVideo"}>
                     <img
                         src={"https://i.pinimg.com/originals/43/e0/20/43e0208b67c685c36a4ea1850614e2d5.gif"}
                         alt={""}

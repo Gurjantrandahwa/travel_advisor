@@ -30,7 +30,7 @@ li {
 }
 
 .section {
-    padding: 4rem 0 2rem;
+    padding: 1rem 0 2rem;
 }
 
 .container {
@@ -100,9 +100,39 @@ input {
 }
 
 @media screen and (min-width: 556px) {
-    .mainContent {
+    .mainContent,.singlePost {
         grid-template-columns:repeat(2, 1fr);
     }
+
 }
 
 
+@media screen and (min-width: 884px) {
+    .mainContent {
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 1240px) {
+.container{
+    width: 70%!important;
+    margin: auto!important;
+}
+}
+@media screen and (min-width: 2560px) {
+body{
+    zoom: 1.7;
+}
+}
+::selection{
+    background: var(--pimaryColor);
+    color: var(--whiteColor);
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--greyBg);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--pimaryColor);
+    border-radius: 10px;
+    cursor: pointer!important;
+}

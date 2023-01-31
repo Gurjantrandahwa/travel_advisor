@@ -87,33 +87,73 @@
       font-weight: 600;
       width: 100%;
       padding: .6rem 1.5rem;
+
+      &:hover {
+        background-color: var(--HoverColor);
+      }
     }
   }
 }
 
 @media screen and (min-width: 480px) {
-
   .home {
+
     .home-card {
       bottom: -100px;
       width: 90%;
       grid-template-columns: repeat(2, 1fr);
-      .btn{
 
+      .btn {
+        transform: translateY(15px);
       }
     }
   }
 }
-@media screen and (min-width: 780px) {
+
+@media screen and (min-width: 720px) {
 
   .home {
-    .home-card {
-      bottom: -70px;
-      width: 90%;
-      grid-template-columns: repeat(4, 1fr);
-      .btn{
-transform: translateY(15px);
+
+    .home-text {
+      h1 {
+        font-size: 2rem;
       }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .home-card {
+      bottom: -10%;
+      grid-template-columns: repeat(4, 1fr);
+
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .home {
+
+    .home-text {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 20px;
+
+        margin-bottom: 10px;
+      }
+
+      button {
+        font-size: 16px;
+      }
+    }
+
+    .home-card {
+      width: 70%;
     }
   }
 }

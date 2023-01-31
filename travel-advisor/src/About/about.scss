@@ -83,3 +83,39 @@
     }
   }
 }
+@media screen and (min-width: 720px) {
+.about{
+  .secContainer{
+
+    .videoCard{
+
+      .cardContent{
+        gap: 1rem;
+        padding: 4rem 2rem;
+        h2{
+          font-size: 2rem;
+        }
+        p{
+          opacity: .7;
+          font-size: 15px;
+        }
+      }
+    }
+    .videoCard{
+
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(2,1fr)!important;
+    }
+  }
+}
+}
+@media screen and (min-width: 720px) {
+  .about{
+    .secContainer{
+      .mainContent{
+        padding: 2.5rem 0;
+      }
+    }
+  }
+}

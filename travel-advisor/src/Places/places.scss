@@ -2,12 +2,14 @@
   padding-top: 15rem;
 
   .sec-container {
+
     .secHeader {
       flex-direction: column;
       align-items: flex-start;
       gap: 1rem;
 
       .text-div {
+        //text-align: center;
 
         h2 {
           color: var(--blackColor);
@@ -179,15 +181,48 @@
   }
 }
 
-//@media screen and (min-width: 400px) {
-//
-//  .places{
-//    padding-top: 10rem;
-//  }
-//}
-//@media screen and (min-width: 760px) {
-//
-//.places{
-//  padding-top: 10rem;
-//}
-//}
+
+@media screen and (min-width: 350px) {
+
+  .places {
+    padding-top: 20rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+
+  .places {
+    .sec-container {
+      .secHeader {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .text-div {
+          text-align: start;
+          max-width: 70%;
+          h2 {
+            font-size: 1.8em;
+          }
+
+          p {
+            font-size: 17px;
+            margin-top: 10px;
+          }
+        }
+
+        .icons-div {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 476px) {
+  .places {
+    padding-top: 8rem;
+
+  }
+}
