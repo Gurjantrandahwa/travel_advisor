@@ -70,7 +70,7 @@ export default function Navbar() {
                             },
 
                         ].map(((value, index) => {
-                            return <li className={"navItem"} key={index}>
+                            return <li className={"navItem"} key={index} onClick={removeNav}>
                                 {value.text}
                             </li>
 
